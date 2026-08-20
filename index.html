@@ -6,19 +6,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
 </head>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f0f4f8;
+margin: 0;
+padding: 0;
+color: #333333;
+}
+header {
+background-color: #0e3574;
+color: #ffffff;
+text-align: center;
+padding: 20px;
+
+}
+nav {
+background-color: #010811;
+text-align: center;
+padding: 10px;
+}
+nav a {
+color: #ffffff;
+text-decoration: none;
+padding: 8px 16px;
+display: inline-block;
+}
+nav a:hover {
+background-color: #0ea5e9;
+border-radius: 6px;
+}
+main{
+display:flex;
+}
+aside {
+width: 20%;
+float: left;
+background-color: #ffffff;
+padding: 20px;
+box-sizing: border-box;
+min-height: 450px;
+}
+aside h3 {
+color: #1e293b;
+border-bottom: 2px solid #0ea5e9;
+padding-bottom: 5px;
+}
+aside ul {
+list-style-type: none;
+padding: 0;
+}
+aside li {
+margin: 8px 0;
+}
+aside a {
+color: #475569;
+text-decoration: none;
+display: inline-block;
+padding: 6px;
+}
+aside a:hover {
+background-color: #f1f5f9;
+color: #0ea5e9;
+padding-left: 12px;
+}
+section {
+width: 80%;
+float: left;
+padding: 15px;
+box-sizing: border-box;
+}
+iframe {
+width: 100%;
+height: 500px;
+border: 2px solid #334155;
+background-color: #ffffff;
+}
+footer {
+background-color: #1e293b;
+color: #ffffff;
+text-align: center;
+padding: 15px;
+}
+footer span {
+color: #0ea5e9;
+font-weight: bold;
+}
+</style>
 <body>
+<header>
     <h1>Portafolio de informatica</h1>
     <p>Juli y Mili web</p>
-<hr>
 <h3>¿Quienes somos?</h3>
 <p>Hola! Somos Juli y Mili alumnas de 3er año de secundaria y esta es nuestra web!</p>
-<h3>Ejercicios y desafios de clase</h3>
-<ul>
-    <li><a href="./pages/lista.html">Ejercicio 1:</a> Lista</li>
-    <li><a href="./pages/tabla1.html">Ejercicio 2:</a> Tablas</li>
-    <li><a href="./pages/semantica.html">Ejercicio 3:</a> Semantica</li>
-    <li><a href="./pages/diario.html">Ejercicio 4:</a> Inframe </li>
-</ul>
-<img src="/img/Tecnologias (1).png" alt="tecnologia usadas"
+</header>
+<nav>
+    <ul>
+        <li><a href="https://github.com/juliamilagros/Informatica"><i class="bi bi-github"></i>GitHub</a></li>
+        <li><a href="https://drive.google.com/drive/folders/1FQCK7WFWUpfN23WR5ySXiupUW9RbEo_1?usp=drive_link"><i class="bi bi-google"></i> Google Drive</a></li>
+    </ul>
+</nav>
+<main>
+    <aside>
+        <h3>Ejercicios y desafios de clase</h3>
+        <ul>
+            <li><a href="./pages/lista.html" target="visor">Ejercicio 1:</a> Lista</li>
+            <li><a href="./pages/tabla1.html" target="visor">Ejercicio 2:</a> Tablas</li>
+            <li><a href="./pages/semantica.html" target="visor">Ejercicio 3:</a> Semantica</li>
+            <li><a href="./pages/diario.html" target="visor">Ejercicio 4:</a> Inframe </li>
+        </ul>
+    </aside>
+    <section>
+        <iframe namee="visor" src="./pages/listas.html"></iframe>
+    </section>
+</main>
+<footer>
+    <p>Equipo 16: Milagros Porta y Julia Gopar 3C</p>
+</footer>
 </body>
 </html>
